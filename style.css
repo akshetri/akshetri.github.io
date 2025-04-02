@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #3d3d29;
     color: white;
     padding: 20px;
     text-align: center;
@@ -41,13 +41,15 @@ section h2 {
 }
 
 footer {
-    background: #333;
-    color: white;
+    background: none;
+    color: #222211;
     text-align: center;
-    padding: 10px;
+    padding: 0;
     position: absolute;
     bottom: 0;
     width: 100%;
+    font-size: 14px;
+    font-family:  'sans-serif';
 }
 
 a {
