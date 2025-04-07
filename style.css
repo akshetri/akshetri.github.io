@@ -1,15 +1,47 @@
-/* This applies to the aboutme section */
-.aboutme {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aboutme-wrapper {
     display: flex;
-    flex-direction: column;    /* Stack the paragraphs vertically */
-    justify-content: flex-start; /* Align content to the top */
-    align-items: flex-start;    /* Align content to the left inside the section */
-    padding-top: 20px;         /* Add space at the top of the section */
-    margin-right: 80px;         /* Move the section towards the right */
-    width: 60%;                 /* Limit the width to 40% of the page */
+    align-items: flex-start; /* Align items at the top */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 20px; /* Space between the image and the text */
+    margin: 20px; /* Optional, to add margin around the whole section */
+    margin-right: 100px;         /* Move the section towards the right */
+    width: 70%;                 /* Limit the width to 40% of the page */
     position: relative;         /* This allows you to use absolute positioning inside */
     margin-left: auto;          /* This moves the section to the right side */
 }
+
+.profile-container {
+    text-align: center;  /* Center the caption below the image */
+    margin: 0;           /* Remove any margin around the figure */
+}
+.profile-image {
+    width: 180px;   /* Increase the width of the image */
+    height: auto;   /* Maintain the aspect ratio of the image */
+    object-fit: cover;  /* Ensures the image fills its container without stretching */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  /* Optional: Add shadow */
+    margin-top: 40px;  /* Move the image 20px upwards */
+    margin-right: 20px;  /* Move the image 20px upwards */
+}
+
+figcaption {
+    margin-top: 10px;    /* Space between the image and caption */
+    font-size: 16px;     /* Adjust the font size for the caption */
+    font-weight: bold;   /* Make the name bold */
+    color: #333;         /* Dark color for the text */
+}
+.aboutme {
+    flex: 1;
+    padding: 20px;    /* Stack the paragraphs vertically */
+    width: 100%;                 /* Limit the width to 40% of the page */
+}
+
+/* This applies to the aboutme section */
 
 .aboutme-content {
     display: flex;
@@ -17,16 +49,10 @@
     gap: 20px;
 }
 
-.profile-image {
-    width: 150px;   /* Increase the width of the image */
-    height: auto;   /* Maintain the aspect ratio of the image */
-    object-fit: cover;  /* Ensures the image fills its container without stretching */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  /* Optional: Add shadow */
-    margin-top: -80px;  /* Move the image 20px upwards */
-}
 
 .aboutme-text {
-    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 /* Apply to each paragraph inside .aboutme */
