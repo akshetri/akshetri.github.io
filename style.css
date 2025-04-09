@@ -82,12 +82,25 @@ header {
     background: #3d3d29;
     color: white;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
     margin: 0;
 }
+
+nav ul {
+    display: flex; /* Align the list items horizontally */
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px; /* Space between the links */
+}
+
 
 section {
     padding: 20px;
@@ -98,7 +111,7 @@ footer {
     color: #222211;
     text-align: center;
     padding: 0;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     font-size: 14px;
@@ -112,4 +125,38 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+nav a {
+    color: white;          /* Change the text color to white */
+    text-decoration: none; /* Remove underline from the links */
+    padding: 10px 15px;    /* Add padding around the link */
+    font-size: 18px;       /* Adjust the font size */
+}
+
+/* Education Section */
+.education-list {
+  list-style-type: none;  /* Removes default bullet points */
+  padding-left: 0;        /* Remove extra padding */
+  margin: 20px 0;         /* Space between sections */
+}
+
+.education-list li {
+  font-size: 18px;        /* Set font size for each list item */
+  margin-bottom: 15px;    /* Add space between list items */
+}
+
+.education-list li p {
+  font-size: 16px;        /* Set font size for paragraph text */
+  margin: 5px 0;          /* Add space between paragraphs */
+}
+
+.education-list li strong {
+  color: #333;            /* Darker color for the degree titles */
+  font-weight: bold;      /* Bold for degree titles */
+}
+
+.education-list li em {
+  font-style: italic;     /* Italicize the grade for emphasis */
+  color: inherit;         /* Red color for emphasis on the grade */
 }
